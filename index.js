@@ -6,8 +6,10 @@ var allques = {
   asksnack: "Which one snack i like Samosa/Litti? ",
   askcartoon: "Which one animated program i like Ninja hattori/Doraemon? ",
   askbike: "what type of bike i love Sport/Cruiser? ",
+  askcity: "In which city i'm belong Patna/Assam? ",
+  askgames: "Which games i like to play Cricket/Soccer? ",
 }
-var allans = ["samosa","doraemon","cruiser"];
+var allans = ["samosa","doraemon","cruiser","patna","cricket"];
 console.log("Hey!",quesone,"Did you know SHAILESH KUMAR? YES/NO " );
 var answait = readlinesync.question();
 function right()
@@ -38,6 +40,14 @@ else if(answait.toLowerCase() === 'yes')
   else
     wrong();
   if(allans[2] === readlinesync.question(allques.askbike).toLowerCase())
+    right();
+  else
+    wrong();
+   if(allans[3] === readlinesync.question(allques.askcity).toLowerCase())
+    right();
+  else
+    wrong();
+   if(allans[4] === readlinesync.question(allques.askgames).toLowerCase())
     right();
   else
     wrong();
